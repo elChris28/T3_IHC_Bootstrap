@@ -1,0 +1,21 @@
+.etiqueta-estado {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.etiqueta-estado.abierto {
+  background-color: #9e9e9e;
+}
+
+.etiqueta-estado.resuelto {
+  background-color: #4CAF50;
+}
+
+.etiqueta-estado.pendiente {
+  background-color: #FFC107;
+  color: #333;
+}

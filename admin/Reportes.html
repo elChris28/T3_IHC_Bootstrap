@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Admin - Cine del Norte</title>
+  <link rel="stylesheet" href="/admin/style/navegacionAdmin.css">
+  <link rel="stylesheet" href="/admin/style/Reportes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="interfazAdmin">
+        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3" style="height: 100vh; width: 220px;">
+        <h2 class="text-center mb-4">Cine del Norte</h2>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="admin.html" class="nav-link text-white"><i class="fa-solid fa-chart-line me-2"></i>Dashboard</a></li>
+            <li class="nav-item mb-2"><a href="peliculas.html" class="nav-link text-white"><i class="fa-solid fa-video me-2"></i>Películas</a></li>
+            <li class="nav-item mb-2"><a href="salas.html" class="nav-link text-white"><i class="fas fa-tv me-2"></i>Salas</a></li>
+            <li class="nav-item mb-2"><a href="productos.html" class="nav-link text-white"><i class="fas fa-box-open me-2"></i>Productos</a></li>
+            <li class="nav-item mb-2"><a href="Promociones.html" class="nav-link text-white"><i class="fa-solid fa-tag me-2"></i>Promociones</a></li>
+            <li class="nav-item mb-2"><a href="empleados.html" class="nav-link text-white"><i class="fa-solid fa-users me-2"></i>Empleados</a></li>
+            <li class="nav-item mb-2"><a href="reportes.html" class="nav-link text-white"><i class="fa-solid fa-folder-plus me-2"></i>Reportes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Cerrar Sesión</a></li>
+        </ul>
+        </aside>
+        <main class="contenido-principal">
+            <header class="encabezado-principal d-flex justify-content-between align-items-center bg-white p-4 rounded shadow-sm mb-4">
+                <h1 class="h3 text-dark m-0">Empleado</h1>
+                <div class="acciones-usuario d-flex align-items-center gap-3">
+                    <i class="fas fa-bell text-secondary fs-5"></i>
+                    <i class="fas fa-cog text-secondary fs-5"></i>
+                    <img src="/img/usuarioFondo.png" alt="avatar" class="avatar">
+                </div>
+            </header>     
+        <section class="d-flex gap-4 mb-4">
+            <div class="text-center bg-light p-3 rounded shadow-sm flex-fill">
+            <div class="text-uppercase fw-bold text-muted mb-2">Total Incidencias</div>
+            <div class="fs-2 fw-bold text-dark">150</div>
+            </div>
+            <div class="text-center bg-light p-3 rounded shadow-sm flex-fill">
+            <div class="text-uppercase fw-bold text-muted mb-2">Incidencias Resueltas</div>
+            <div class="fs-2 fw-bold text-dark">120</div>
+            <div class="fs-6 text-muted fw-semibold">80%</div>
+            </div>
+            <div class="text-center bg-light p-3 rounded shadow-sm flex-fill">
+            <div class="text-uppercase fw-bold text-muted mb-2">Incidencias Pendientes</div>
+            <div class="fs-2 fw-bold text-dark">30</div>
+            <div class="fs-6 text-muted fw-semibold">20%</div>
+            </div>
+        </section>
+
+        <section class="bg-white p-4 rounded shadow">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fs-4 m-0">Reportes - Incidencias</h2>
+            <div class="d-flex gap-3">
+                <button class="btn btn-outline-success">Exportar a Excel</button>
+                <button class="btn btn-primary">Crear Reporte</button>
+            </div>
+            </div>
+
+            <div class="d-flex gap-3 mb-4 bg-white p-3 rounded shadow-sm align-items-center">
+            <input type="text" class="form-control" placeholder="Buscar por Asunto, Cliente...">
+            <select class="form-select w-auto">
+                <option value="">Estado</option>
+                <option value="abierto">Abierto</option>
+                <option value="resuelto">Resuelto</option>
+                <option value="pendiente">Pendiente</option>
+            </select>
+            </div>
+
+            <table class="table table-hover">
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Fecha y Hora</th>
+                <th>Cliente</th>
+                <th>Asunto</th>
+                <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>#1001</td>
+                <td>06/05/2025 14:30</td>
+                <td>Mario Pérez</td>
+                <td>ERROR EN LA RESERVA</td>
+                <td><span class="etiqueta-estado abierto">ABIERTO</span></td>
+                </tr>
+                <tr>
+                <td>#1000</td>
+                <td>04/05/2025 10:15</td>
+                <td>Diego Monte</td>
+                <td>SALA EN MAL ESTADO</td>
+                <td><span class="etiqueta-estado resuelto">RESUELTO</span></td>
+                </tr>
+                <tr>
+                <td>#0999</td>
+                <td>02/05/2025 20:00</td>
+                <td>José Rojas</td>
+                <td>SONIDO DEFICIENTE</td>
+                <td><span class="etiqueta-estado pendiente">PENDIENTE</span></td>
+                </tr>
+                <tr>
+                <td>#0998</td>
+                <td>28/04/2025 09:45</td>
+                <td>Andrea Muñoz</td>
+                <td>ERROR EN LA COMPRA</td>
+                <td><span class="etiqueta-estado pendiente">PENDIENTE</span></td>
+                </tr>
+                <tr>
+                <td>#0997</td>
+                <td>15/04/2025 18:20</td>
+                <td>Andres Garcia</td>
+                <td>PROBLEMA CON EL PAGO</td>
+                <td><span class="etiqueta-estado resuelto">RESUELTO</span></td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+        </main>
+    </div>
+</body>
+</html>

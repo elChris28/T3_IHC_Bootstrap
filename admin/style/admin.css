@@ -1,0 +1,200 @@
+.seccion-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.cuadricula-info-general {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5em;
+}
+
+.grupo-asistencia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.tarjeta-grafico {
+  background-color: #ffffff;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: #333;
+  border: 1px solid #eee;
+}
+
+.asistencia-mensual .contenedor-grafico-lineas,
+.asistencia-semanal .contenedor-grafico-lineas-semanal {
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 50px;
+  position: relative;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 1em;
+}
+
+.contenedor-grafico-lineas svg polyline {
+  fill: none;
+  stroke: #6091D5;
+  stroke-width: 2;
+}
+
+.contenedor-grafico-lineas-semanal svg polyline {
+  fill: none;
+  stroke: #FF9800;
+  stroke-width: 2;
+}
+
+.etiquetas-eje-x,
+.etiquetas-eje-x-semanal {
+  position: absolute;
+  bottom: 4px;
+  left: 55px;
+  width: calc(100% - 70px);
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9em;
+  color: #555;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+.etiquetas-eje-y,
+.etiquetas-eje-y-semanal {
+  position: absolute;
+  left: 0;
+  height: calc(100% - 53px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: right;
+  width: 55px;
+  box-sizing: border-box;
+}
+
+.barras-peliculas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 1.5em;
+}
+
+.nombre-Pelicula {
+  display: flex;
+  gap: 10px;
+}
+
+.nombre-Pelicula span {
+  flex-basis: 90px;
+  min-width: 90px;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+
+.barra-progreso-pelicula {
+  flex-grow: 1;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.barra-progreso-pelicula .progreso {
+  height: 100%;
+  background-color: #6091D5;
+  border-radius: 10px;
+}
+
+.cuadricula-reportes {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.tarjeta-reporte {
+  background-color: #fdfdfd;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+
+.ventas-por-mes .contenedor-grafico-con-ejes {
+  display: flex;
+  height: 220px;
+  margin-top: 5.5rem;
+  position: relative;
+  padding-left: 60px;
+}
+
+.ventas-por-mes .etiquetas-eje-y-ventas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-right: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  position: absolute;
+  left: 0;
+  width: 60px;
+  top: 0;
+}
+
+.ventas-por-mes .etiquetas-eje-y-ventas span {
+  display: block;
+  line-height: 1;
+}
+
+.ventas-por-mes .cuadricula-grafico-barras {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.ventas-por-mes .grupo-barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  max-width: 80px;
+}
+
+.ventas-por-mes .barra {
+  width: 40px;
+  background-color: #2056a3;
+  border-radius: 3px 3px 0 0;
+}
+
+.tarjeta-reporte ul {
+  padding: 0;
+  margin-top: 1em;
+}
+
+.tarjeta-reporte ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.6em 0;
+  border-bottom: 1px solid #47474746;
+}
+
+.tarjeta-reporte ul li i {
+  margin-right: 10px;
+  color: #6091D5;
+}
