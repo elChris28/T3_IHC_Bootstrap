@@ -136,3 +136,48 @@ h2 {
   color: black;
 }
 
+@media (max-width: 768px) {
+  .tarjeta-pelicula {
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .contenido-pelicula {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .contenido-pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .info-pelicula {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .info-pelicula h3 {
+    font-size: 1.5rem;
+  }
+
+  .bloque-sala {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .btn-horario {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .filtro-horarios label,
+  .filtro-horarios select {
+    font-size: 1rem;
+  }
+}
+

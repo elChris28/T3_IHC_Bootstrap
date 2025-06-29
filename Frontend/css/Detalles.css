@@ -122,3 +122,52 @@
 .btn-horario-imagen:hover {
     background-color: goldenrod;
 }
+
+
+@media (max-width: 768px) {
+  .seccion-detalles-pelicula {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenedor-poster {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 180px;
+    height: 270px;
+  }
+
+  .titulo-pelicula-imagen {
+    font-size: 1.8rem;
+  }
+
+  .informacion-pelicula-imagen p {
+    font-size: 1rem;
+  }
+
+  .contenedor-horarios-imagen h4 {
+    font-size: 1.3rem;
+  }
+
+  .btn-horario-imagen {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .etiqueta-trailer {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .superposicion-boton-reproducir {
+    width: 60px;
+    height: 60px;
+  }
+
+  .superposicion-boton-reproducir::before {
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid gold;
+  }
+}

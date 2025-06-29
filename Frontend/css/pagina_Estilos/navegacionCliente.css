@@ -66,3 +66,29 @@ body::before {
 .nav-izquierda a:hover, .nav-derecha a:hover {
     color: gold;
 }
+
+@media (max-width: 768px) {
+  .contenedor-barra {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .barra-izquierda, .nav-izquierda, .nav-derecha {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-izquierda li, .nav-derecha li {
+    width: 100%;
+  }
+
+  .nav-izquierda a, .nav-derecha a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+}

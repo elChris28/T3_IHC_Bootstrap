@@ -62,3 +62,36 @@
   border: none;
   width: 600px;
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-principal {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .mapa
+  {
+    width: 70%;
+    margin-top: 50px;
+
+  }
+  
+  .imagen {
+    width: 50%;
+    height: auto;
+  }
+
+
+  .separacion p {
+    font-size: 15px;
+  }
+
+}

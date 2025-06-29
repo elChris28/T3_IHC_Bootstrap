@@ -9,6 +9,8 @@ main {
 
 .panel-izquierdo,
 .panel-derecho {
+  max-width: 700px;
+  width: 100%;
   background-color: rgb(195, 195, 195);
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -153,3 +155,37 @@ main {
   align-items: center;
   gap: 5px;
 }
+
+
+@media (max-width: 768px) {
+  .panel-derecho {
+    padding: 1rem;
+  }
+
+  .pantalla-etiqueta {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .fila-asientos {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .asientos {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .boton-pov {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .leyenda {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+

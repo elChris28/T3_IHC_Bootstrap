@@ -1,0 +1,30 @@
+.campo-horarios label {
+  font-weight: 600; 
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #2D2D2D; 
+}
+
+
+form .btn.btn-primary {
+  background-color: #2A6D9E;
+  border-color: #2A6D9E;
+  color: #ffffff;
+}
+
+form .btn.btn-primary:hover {
+  background-color: #1F4E79;
+  border-color: #1F4E79;
+}
+
+form .btn.btn-success {
+  background-color: #FF7F0E;
+  border-color: #FF7F0E;
+  color: #000000;
+}
+
+form .btn.btn-success:hover {
+  background-color: #CC660B;
+  border-color: #CC660B;
+}

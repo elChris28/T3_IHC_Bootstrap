@@ -120,3 +120,79 @@
     border: 3px solid #000000;
     border-radius: 10px;
 }
+
+@media (max-width: 1024px) {
+  .dulceria-principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panel-pedido {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 2rem;
+  }
+
+  .productos-cuadro {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .productos-cuadro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto-tarjeta {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .panel-pedido {
+    width: 90%;
+    max-width: 350px;
+    font-size: 0.9rem;
+  }
+
+  .pedido-item {
+    font-size: 0.85rem;
+  }
+
+  .btnContinuar {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dulceria-principal {
+    padding: 1rem;
+  }
+
+  .producto-tarjeta {
+    width: 100%;
+  }
+
+  .barra-categorias {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .categoria-boton {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .panel-pedido {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .btnContinuar {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+}

@@ -73,3 +73,11 @@ button:hover {
 .enlaces-formulario a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  main {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+}

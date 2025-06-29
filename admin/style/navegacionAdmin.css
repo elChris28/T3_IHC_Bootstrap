@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
+  color: #2D2D2D; 
 }
 
 .interfazAdmin {
@@ -16,6 +17,7 @@ body {
   font-size: 1.5em;
   margin-bottom: 1em;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .barraLateral ul li {
@@ -23,7 +25,8 @@ body {
 }
 
 .barraLateral ul li a:hover {
-  background-color: goldenrod;
+  background-color: #005A9C; 
+  color: #ffffff;
 }
 
 .contenido-principal {
@@ -44,7 +47,7 @@ body {
 }
 
 .boton:hover {
-  background-color: gold;
+  background-color: #2A6D9E; 
 }
 
 .encabezado-principal {
@@ -60,7 +63,7 @@ body {
 
 .encabezado-principal h1 {
     font-size: 2.5rem;
-    color: #333; 
+    color: #2D2D2D;
     margin: 0; 
 }
 
@@ -72,13 +75,13 @@ body {
 
 .acciones-usuario i {
     font-size: 1.4em;
-    color: #555;
+   color: #444; 
     cursor: pointer;
     transition: color 0.4s;
 }
 
 .acciones-usuario i:hover {
-    color: gold;
+  color: #2A6D9E; 
 }
 
 .avatar {
@@ -96,4 +99,6 @@ textarea
     font-weight: bold;
     font-size: 1rem;
     border: 2px solid #000;
+    background-color: #ffffff;
+    color: #2D2D2D;
 }

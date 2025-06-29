@@ -10,7 +10,8 @@ main {
 .contenedor-registro {
   background: rgba(255, 255, 255, 0.158);
   padding: 2rem;
-  width: 35%;
+  width: 100%;
+  max-width: 500px;
   border-radius: 16px;
   text-align: center;
   color: white;
@@ -83,3 +84,12 @@ button:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  .contenedor-registro {
+    padding: 1.5rem;
+  }
+}

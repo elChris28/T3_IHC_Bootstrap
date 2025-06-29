@@ -122,3 +122,24 @@
 .btn-detalles:hover {
   text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.5rem; /* Even smaller title on very small screens */
+  }
+
+  .hero p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  .btn-principal {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .contenedor-cartelera h2 {
+    font-size: 1.2rem; /* Even smaller heading */
+    width: 60%; /* Make it more flexible */
+  }
+}

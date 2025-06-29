@@ -96,3 +96,30 @@
   font-size: 0.75rem;
   color: #ccc;
 }
+@media (max-width: 768px) {
+  .pie-pagina-superior {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .enlaces-pie {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .columna-pie h3 {
+    font-size: 1.1rem;
+  }
+
+  .columna-pie ul li a {
+    font-size: 0.9rem;
+  }
+
+  .redes-sociales {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
