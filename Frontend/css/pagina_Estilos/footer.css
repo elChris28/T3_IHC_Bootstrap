@@ -1,0 +1,98 @@
+.pie-pagina {
+  background-color: #000000;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.pie-pagina-superior {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 2px solid #111;
+}
+
+.logo-pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+.logo-pie img {
+  width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.logo-texto {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #eee;
+  text-align: center;
+}
+
+.enlaces-pie {
+  display: flex;
+  gap: 3rem;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.columna-pie h3 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.columna-pie ul {
+  list-style: none;
+  padding: 0;
+}
+
+.columna-pie ul li {
+  margin-bottom: 0.3rem;
+}
+
+.columna-pie ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.columna-pie ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.pie-pagina-inferior {
+  background-color: #000000;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pie-pagina-inferior p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.icono {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.icono span {
+  display: block;
+  font-size: 0.75rem;
+  color: #ccc;
+}

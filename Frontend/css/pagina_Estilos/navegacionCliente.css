@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: url('/img/fondoInterfazCliente.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(40, 0, 70, 0.5));
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+.barra-navegacion {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.contenedor-barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.barra-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-barra {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-izquierda, .nav-derecha {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-izquierda a, .nav-derecha a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-izquierda a:hover, .nav-derecha a:hover {
+    color: gold;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cine del Norte - Registro</title>
+    <link rel="stylesheet" href="/Frontend/css/RegistroSesion.css" />
+    <link rel="stylesheet" href="./css/pagina_Estilos/navegacionCliente.css">
+</head>
+<body>
+    <nav class="barra-navegacion">
+        <div class="contenedor-barra">
+        <div class="barra-izquierda">
+            <a href="Index.html" class="logo-barra">🎬 Cine del Norte</a>
+            <ul class="nav-izquierda">
+            <li><a href="cartelera.html">Cartelera</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="Dulceria.html">Dulcería</a></li>
+            </ul>
+        </div>
+        <ul class="nav-derecha">
+            <li><a href="./InicioSesion.html">Iniciar Sesión</a></li>
+            <li><a href="./RegistroSesion.html">Registrarse</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contenedor-registro">
+            <h2>Registro de Usuario</h2>
+            <form>
+                <div class="grupo-formulario">
+                    <div>
+                    <label>Nombre completo:</label>
+                    <input type="text" placeholder="Nombres" required/>
+                    </div>
+
+                    <br>
+                    <div>
+                    <label>Apellidos Completos:</label>
+                    <input type="text" placeholder="Apellidos" required/>
+                    </div>
+
+                    <br>
+                    <div>
+                    <label>Correo electrónico:</label>
+                    <input type="email" placeholder="correo electrónico" required/>
+                    </div>
+
+                    <br>
+                    <div>
+                    <label>Contraseña:</label>
+                    <input type="password" placeholder="contraseña" required/>
+                    </div>
+
+                    <br>
+                    <div class="grupo-formulario">
+                    <label>Confirmar contraseña:</label>
+                    <input type="password" placeholder="confirmar contraseña" />
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit">Registrarse</button>
+                </div>
+
+                <div class="enlaces-formulario">
+                    <a href="./InicioSesion.html">¿Ya tienes cuenta? Inicia sesión</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

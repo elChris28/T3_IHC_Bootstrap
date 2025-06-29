@@ -1,0 +1,122 @@
+.dulceria-principal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  background-color: #e0e0e088;
+}
+
+.seccion-titulo {
+  color: #070707;
+  margin-bottom: 1rem;
+}
+
+.productos-cuadro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: #000000;
+}
+
+.producto-tarjeta {
+  background-color: #cfcfcf;
+  border: 7px solid #505050;
+  padding: 1rem;
+  width: 200px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.producto-imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.producto-descripcion {
+  font-size: 0.85rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.control-boton {
+  background-color: gold;
+  color: #000000;
+  margin: 15px;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid #000000;
+}
+
+.barra-categorias {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem;
+}
+
+.categoria-boton {
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: gold;
+  border: 3px solid #000000;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categoria-boton:hover {
+  background-color: goldenrod;
+}
+
+.panel-pedido {
+  background-color: #cfcebf;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 500px;
+  min-width: 250px;
+  box-shadow: 0 0 8px rgba(29, 5, 5, 0.747);
+  color: #000000;
+}
+
+.pedido-asiento {
+  background-color: #000000;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.pedido-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e7e7e7;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border:  2px solid #000000;
+  font-size: 0.9rem;
+}
+
+.pedido-total {
+  text-align: right;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.btnContinuar {
+    text-decoration: none;
+    background-color: gold;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}

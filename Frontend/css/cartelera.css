@@ -1,0 +1,124 @@
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.9)),
+              url('/img/banner_peliculas.png') no-repeat center center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-principal {
+  padding: 0.8rem 1.5rem;
+  background-color: #e2b436ab;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-size: 1.6rem; 
+}
+
+.btn-principal:hover {
+  background-color: #e1aa00;
+}
+
+.contenedor-cartelera {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contenedor-cartelera h2 {
+  font-size: 2rem;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  background-color: #FFD700;
+  border: #ffffffe8 5px solid;
+  border-radius: 20px;
+  width: 15%;
+  font-family: "Rowdies", sans-serif;
+}
+
+.contenedor-peliculas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  margin: 30px;
+}
+
+.tarjeta {
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+}
+
+.contenedor-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contenedor-img img:first-child {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.contenedor-img img:last-child {
+  position: absolute;
+  width: 250px;
+  height: 350px; 
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 10%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgb(0, 0, 0) 250%
+  );
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.contenedor-img:hover img:first-child {
+  transform: perspective(250px) rotateX(10deg) translateY(-5%);
+}
+
+.contenedor-img:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+.tarjeta h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.8rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.btn-detalles {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.btn-detalles:hover {
+  text-decoration: underline;
+}

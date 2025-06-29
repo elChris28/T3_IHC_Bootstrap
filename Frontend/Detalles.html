@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cine del Norte - Detalles</title>
+    <link rel="stylesheet" href="/Frontend/css/Detalles.css" />
+    <link rel="stylesheet" href="./css/pagina_Estilos/footer.css">
+    <link rel="stylesheet" href="./css/pagina_Estilos/navegacionCliente.css">
+</head>
+<body>
+    <nav class="barra-navegacion">
+        <div class="contenedor-barra">
+        <div class="barra-izquierda">
+            <a href="Index.html" class="logo-barra">🎬 Cine del Norte</a>
+            <ul class="nav-izquierda">
+            <li><a href="cartelera.html">Cartelera</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="Dulceria.html">Dulcería</a></li>
+            </ul>
+        </div>
+        <ul class="nav-derecha">
+            <li><a href="./InicioSesion.html">Iniciar Sesión</a></li>
+            <li><a href="./RegistroSesion.html">Registrarse</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <main class="contenido-principal">
+        <div class="banner-pelicula">
+            <video class="video-pelicula" autoplay muted loop>
+                <source src="/videos/John Wick Chapter 2.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de video.
+            </video>
+            <div class="superposicion-boton-reproducir"></div>
+            <div class="etiqueta-trailer">TRAILER HD</div>
+        </div>
+
+        <div class="seccion-detalles-pelicula">
+            <div class="contenedor-poster">
+                <img src="/img/pelicula.png" alt="" class="poster-pelicula" />
+            </div>
+            <div class="informacion-pelicula-imagen">
+                <h3 class="titulo-pelicula-imagen">JOHN WICK: CAPÍTULO 2</h3>
+                <p><strong>Idioma:</strong> Inglés (Subtitulada)</p>
+                <p><strong>Disponibilidad:</strong> 2D, 3D, IMAX</p>
+                <div class="contenedor-horarios-imagen">
+                    <h4>Horarios:</h4>
+                    <p><strong>Sala Principal (IMAX)</strong></p>
+                    <div>
+                        <a href="./ReservarAsiento.html"><button class="btn-horario-imagen">6:00 PM</button></a>
+                        <a href="./ReservarAsiento.html"><button class="btn-horario-imagen">8:00 PM</button></a>
+                        <a href="./ReservarAsiento.html"><button class="btn-horario-imagen">9:00 PM</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="pie-pagina-superior">
+        <div class="logo-pie">
+            <img src="/img/logo.png" alt="Cine del Norte" />
+        </div>
+        <div class="enlaces-pie">
+            <div class="columna-pie">
+            <h3>PROGRAMACIÓN</h3>
+            <ul>
+                <li><a href="#">Cartelera</a></li>
+                <li><a href="#">Próximamente</a></li>
+            </ul>
+            </div>
+            <div class="columna-pie">
+            <h3>NOSOTROS</h3>
+            <ul>
+                <li><a href="#">Conócenos</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de Protección de Datos Personales</a></li>
+            </ul>
+            </div>
+            <div class="columna-pie">
+            <h3>OTROS SERVICIOS</h3>
+            <ul>
+                <li><a href="#">Publicidad</a></li>
+                <li><a href="./Incidencias.html">Reportar incidencia</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <div class="pie-pagina-inferior">
+        <p>&copy; 2025 Todos los derechos reservados a Cine del Norte</p>
+        <div class="redes-sociales">
+            <a href="#" class="icono facebook">📘 Facebook</a>
+            <a href="#" class="icono twitter">🐦 Twitter</a>
+            <a href="#" class="icono instagram">📸 Instagram</a>
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>

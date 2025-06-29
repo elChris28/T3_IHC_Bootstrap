@@ -1,0 +1,165 @@
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.9)),
+                url('/img/hero.png') no-repeat center center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-principal {
+  padding: 0.8rem 1.5rem;
+  background-color: #e2b436ab;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-size: 1.6rem; 
+}
+
+.btn-principal:hover {
+  background-color: #e1aa00;
+}
+
+.cartelera {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.cartelera-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartelera-titulo h2 {
+  font-size: 2.5rem;
+  color: #fef4f4;
+  font-weight: 900;
+}
+
+.cartelera-titulo nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  position: relative;
+}
+
+.cartelera-titulo a.activo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: gold;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.cartelera-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pelicula-grande img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.contenido-extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.pelicula-chica img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.etiqueta {
+  position: relative;
+  top: 10px;
+  background-color: rgb(168, 143, 2);
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.caracteristicas {
+  background-color: #07070742;
+  color: white;
+  text-align: center;
+  padding: 8rem;
+  margin-top: 30px;
+}
+
+.caracteristicas h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contenido-beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.beneficio {
+  background-color: #1f1f1f;
+  height: 300px;
+  border-radius: 10px;
+  padding: 1rem ;
+  width: 250px;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.beneficio:hover {
+  transform: translateY(-8px);
+  background-color: #292929;
+}
+
+.beneficio h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #f1c40f;
+}
+
+.beneficio p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.imagenBeneficio
+{
+  width: 200px;
+  height: auto;
+}

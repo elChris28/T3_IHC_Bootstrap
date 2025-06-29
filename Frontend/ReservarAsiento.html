@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cine del Norte - Reserva de Asiento</title>
+    <link rel="stylesheet" href="/Frontend/css/ReservarAsiento.css"/>
+    <link rel="stylesheet" href="./css/pagina_Estilos/footer.css">
+    <link rel="stylesheet" href="./css/pagina_Estilos/navegacionCliente.css">
+</head>
+<body>
+    <nav class="barra-navegacion">
+        <div class="contenedor-barra">
+        <div class="barra-izquierda">
+            <a href="Index.html" class="logo-barra">🎬 Cine del Norte</a>
+            <ul class="nav-izquierda">
+            <li><a href="cartelera.html">Cartelera</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="Dulceria.html">Dulcería</a></li>
+            </ul>
+        </div>
+        <ul class="nav-derecha">
+            <li><a href="./InicioSesion.html">Iniciar Sesión</a></li>
+            <li><a href="./RegistroSesion.html">Registrarse</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="panel-izquierdo">
+            <div class="estilo-centrado">
+                <img src="/img/pelicula.png" alt="" />
+            </div>
+            <h4>JOHN WICK 2</h4>
+            <p>Español</p>
+            <p><strong>Fecha:</strong> 10/06/2025</p>
+            <p><strong>Hora:</strong> 19:00</p>
+            <p><strong>Sala:</strong> Sala 3</p>
+            <p><strong>Butacas seleccionadas:</strong> <span class="info-butacas">Ninguna</span></p>
+
+            <div class="tarjeta-descripcion">
+                <h4>Mi Pedido</h4>
+                <h4>Entrada x1 - S/ 20.00</h4>
+                <br>
+                <p><Strong>Total: S/. 20.00</Strong></p>
+                <button class="btn btn-exito">Ir a Pago</button>
+            </div>
+        </div>
+
+        <div class="panel-derecho">
+            <h3 class="pantalla-etiqueta">Pantalla</h3>
+                <div class="contenedor-asientos">
+                    <div class="fila-asientos">
+                        <button class="boton-pov">POV</button>
+                        <div class="asientos">
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento ocupada"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento ocupada"></div>
+                            <div class="descripcion-asiento seleccionada"></div>
+                        </div>
+                        <button class="boton-pov">POV</button>
+                    </div>
+
+                    <div class="fila-asientos">
+                        <div class="asientos">
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                        </div>
+                    </div>
+
+                    <div class="fila-asientos">
+                        <div class="asientos">
+                            <div class="descripcion-asiento silla"></div>
+                            <div class="descripcion-asiento silla"></div>
+                            <div class="descripcion-asiento silla"></div>
+                            <div class="descripcion-asiento silla"></div>
+                            <div class="descripcion-asiento silla"></div>
+                        </div>
+                    </div>
+
+                    <div class="fila-asientos">
+                        <button class="boton-pov">POV</button>
+                        <div class="asientos">
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento seleccionada"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                        </div>
+                        <button class="boton-pov">POV</button>
+                    </div>
+
+                    <div class="fila-asientos">
+                        <div class="asientos">
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento ocupada"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                        </div>
+                    </div>
+
+                    <div class="fila-asientos">
+                        <div class="asientos">
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                        </div>
+                    </div>
+
+                    <div class="fila-asientos">
+                        <button class="boton-pov">POV</button>
+                        <div class="asientos">
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                            <div class="descripcion-asiento disponible"></div>
+                        </div>
+                        <button class="boton-pov">POV</button>
+                    </div>
+                    
+                </div>
+
+                <div class="leyenda">
+                    <div><span class="descripcion-asiento disponible"></span> Disponible</div>
+                    <div><span class="descripcion-asiento ocupada"></span> Ocupada</div>
+                    <div><span class="descripcion-asiento seleccionada"></span> Seleccionada</div>
+                    <div><span class="descripcion-asiento silla"></span> Silla de ruedas</div>
+                </div>
+
+                <div class="estilo-centrado">
+                    <a href="CompraDulces.html" class="btn btn-principal">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="pie-pagina-superior">
+        <div class="logo-pie">
+            <img src="/img/logo.png" alt="Cine del Norte" />
+        </div>
+        <div class="enlaces-pie">
+            <div class="columna-pie">
+            <h3>PROGRAMACIÓN</h3>
+            <ul>
+                <li><a href="#">Cartelera</a></li>
+                <li><a href="#">Próximamente</a></li>
+            </ul>
+            </div>
+            <div class="columna-pie">
+            <h3>NOSOTROS</h3>
+            <ul>
+                <li><a href="#">Conócenos</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de Protección de Datos Personales</a></li>
+            </ul>
+            </div>
+            <div class="columna-pie">
+            <h3>OTROS SERVICIOS</h3>
+            <ul>
+                <li><a href="#">Publicidad</a></li>
+                <li><a href="./Incidencias.html">Reportar incidencia</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <div class="pie-pagina-inferior">
+        <p>&copy; 2025 Todos los derechos reservados a Cine del Norte</p>
+        <div class="redes-sociales">
+            <a href="#" class="icono facebook">📘 Facebook</a>
+            <a href="#" class="icono twitter">🐦 Twitter</a>
+            <a href="#" class="icono instagram">📸 Instagram</a>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

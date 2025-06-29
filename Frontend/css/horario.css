@@ -1,0 +1,138 @@
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.9)),
+                url('/img/horario.png') no-repeat center center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-principal {
+  padding: 0.8rem 1.5rem;
+  background-color: #e2b436ab;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-size: 1.6rem; 
+}
+
+.btn-principal:hover {
+  background-color: #e1aa00;
+}
+
+main {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 2rem;
+  font-size: 2.5rem;
+  color: gold;
+}
+
+.tarjeta-pelicula {
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+  background-color: #222323;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contenido-pelicula {
+  flex: 1 1 300px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.contenido-pelicula img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.info-pelicula {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: gold;
+}
+
+.info-pelicula p {
+  font-size: 1rem;
+  color:white;
+}
+
+.bloque-sala {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.btn-horario {
+  background-color: transparent;
+  border: 2px solid goldenrod;
+  color:white;
+  padding: 0.3rem 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-horario:hover {
+  background-color: gold;
+  color: black;
+}
+
+.filtro-horarios {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.filtro-horarios label {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.filtro-horarios select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid gold;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+
+.filtro-horarios select option {
+  color: black;
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cine del Norte - Horarios</title>
+    <link rel="stylesheet" href="/Frontend/css/horario.css" />
+    <link rel="stylesheet" href="./css/pagina_Estilos/footer.css">
+    <link rel="stylesheet" href="./css/pagina_Estilos/navegacionCliente.css">
+</head>
+<body>
+    <nav class="barra-navegacion">
+        <div class="contenedor-barra">
+        <div class="barra-izquierda">
+            <a href="Index.html" class="logo-barra">🎬 Cine del Norte</a>
+            <ul class="nav-izquierda">
+            <li><a href="cartelera.html">Cartelera</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="Dulceria.html">Dulcería</a></li>
+            </ul>
+        </div>
+        <ul class="nav-derecha">
+            <li><a href="./InicioSesion.html">Iniciar Sesión</a></li>
+            <li><a href="./RegistroSesion.html">Registrarse</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>La emoción del cine en tu ciudad</h1>
+        <p>Consulta funciones, estrenos y reserva tu entrada.</p>
+        <a href="#cartelera" class="btn-principal">Ver Cartelera</a>
+    </section>
+
+    <main >
+        <h2>Horarios</h2>
+        <section class="filtro-horarios">
+        <label>Filtrar por horario:</label>
+        <select>
+            <option value="todos">Todos</option>
+            <option value="mañana">Mañana (10:00 - 12:00)</option>
+            <option value="tarde">Tarde (14:00 - 18:00)</option>
+            <option value="noche">Noche (20:00 - 22:00)</option>
+        </select>
+        </section>
+
+        <article class="tarjeta-pelicula">
+        <div class="contenido-pelicula">
+            <img src="/img/pelicula.png" alt=""/>
+        </div>
+        <div class="info-pelicula">
+            <h3>Título de la Película</h3>
+            <p><strong>Sinopsis:</strong> El legendario asesino John Wick...</p>
+            <br>
+            <h3>Horarios:</h3>
+            <div class="bloque-sala">
+                <strong>Sala 1 (2D)</strong>
+                <br>
+                <br>
+                <a href="./ReservarAsiento.html"><button class="btn-horario mañana" >10:00</button></a>
+                <a href="./ReservarAsiento.html"><button class="btn-horario tarde">14:00</button></a>
+                <a href="./ReservarAsiento.html"><button class="btn-horario noche">20:00</button></a>
+            </div>
+            </div>
+        </div>
+        </article>
+
+        <article class="tarjeta-pelicula">
+        <div class="contenido-pelicula">
+            <img src="/img/mario.png" alt=""/>
+        </div>
+        <div class="info-pelicula">
+            <h3>Título de la Película</h3>
+            <p><strong>Sinopsis:</strong> Dos hermanos plomeros, Mario y Luigi...</p>
+            <br>
+            <h3>Horarios:</h3>
+            <div class="bloque-sala">
+                <strong>Sala 2 (Estándar)</strong>
+                <br>
+                <br>
+                <button class="btn-horario mañana">10:00</button>
+                <button class="btn-horario tarde">15:00</button>
+                <button class="btn-horario noche">20:00</button>
+            </div>
+            </div>
+        </div>
+        </article>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="pie-pagina-superior">
+        <div class="logo-pie">
+            <img src="/img/logo.png" alt="Cine del Norte" />
+        </div>
+        <div class="enlaces-pie">
+            <div class="columna-pie">
+            <h3>PROGRAMACIÓN</h3>
+            <ul>
+                <li><a href="#">Cartelera</a></li>
+                <li><a href="#">Próximamente</a></li>
+            </ul>
+            </div>
+            <div class="columna-pie">
+            <h3>NOSOTROS</h3>
+            <ul>
+                <li><a href="#">Conócenos</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de Protección de Datos Personales</a></li>
+            </ul>
+            </div>
+            <div class="columna-pie">
+            <h3>OTROS SERVICIOS</h3>
+            <ul>
+                <li><a href="#">Publicidad</a></li>
+                <li><a href="./Incidencias.html">Reportar incidencia</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <div class="pie-pagina-inferior">
+        <p>&copy; 2025 Todos los derechos reservados a Cine del Norte</p>
+        <div class="redes-sociales">
+            <a href="#" class="icono facebook">📘 Facebook</a>
+            <a href="#" class="icono twitter">🐦 Twitter</a>
+            <a href="#" class="icono instagram">📸 Instagram</a>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
