@@ -126,11 +126,11 @@
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 1.5rem; /* Even smaller title on very small screens */
+    font-size: 1.5rem; 
   }
 
   .hero p {
-    font-size: 0.9rem; /* Adjust paragraph size */
+    font-size: 0.9rem; 
   }
 
   .btn-principal {
@@ -139,7 +139,7 @@
   }
 
   .contenedor-cartelera h2 {
-    font-size: 1.2rem; /* Even smaller heading */
-    width: 60%; /* Make it more flexible */
+    font-size: 1.2rem; 
+    width: 60%; 
   }
 }
