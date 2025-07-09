@@ -4,18 +4,6 @@
   gap: 2em;
 }
 
-.cuadricula-info-general {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5em;
-}
-
-.grupo-asistencia {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2em;
-}
-
 .tarjeta-grafico {
   background-color: #ffffff;
   padding: 1.5em;
@@ -36,20 +24,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.etiquetas-eje-x,
-.etiquetas-eje-x-semanal {
-  position: absolute;
-  bottom: 4px;
-  left: 55px;
-  width: calc(100% - 70px);
-  display: flex;
-  justify-content: space-around;
-  font-size: 0.9em;
-  color: #555;
-  padding-top: 5px;
-  box-sizing: border-box;
 }
 
 .etiquetas-eje-y,
@@ -95,7 +69,7 @@ img {
   overflow: hidden;
 }
 
-.barra-progreso-pelicula .progreso {
+.progreso {
   height: 100%;
   background-color: #2A6D9E;
   border-radius: 10px;
@@ -107,7 +81,6 @@ img {
   gap: 2rem;
   margin-bottom: 2rem;
 }
-
 
 .tarjeta-reporte {
   background-color: #fdfdfd;
