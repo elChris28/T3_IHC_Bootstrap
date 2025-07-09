@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="interfazAdmin">
-        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3" style="height: 100vh; width: 220px;">
+        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3">
         <h2 class="text-center mb-4">Cine del Norte</h2>
         <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="admin.html" class="nav-link text-white"><i class="fa-solid fa-chart-line me-2"></i>Dashboard</a></li>
@@ -25,60 +25,60 @@
         </ul>
         </aside>
         <main class="contenido-principal">
-            <header class="encabezado-principal d-flex justify-content-between align-items-center bg-white p-4 rounded shadow-sm mb-4">
-                <h1 class="h3 text-dark m-0">Sala</h1>
-                <div class="acciones-usuario d-flex align-items-center gap-3">
-                    <i class="fas fa-bell text-secondary fs-5"></i>
-                    <i class="fas fa-cog text-secondary fs-5"></i>
+            <header class="encabezado-principal">
+                <h1>Salas</h1>
+                <div class="acciones-usuario">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-cog"></i>
                     <img src="/img/usuarioFondo.png" alt="avatar" class="avatar">
                 </div>
             </header>
         <form>
             <div class="row mb-3">
-            <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Nombre de la sala" required>
-            </div>
-            <div class="col-md-6">
-                <input type="number" class="form-control" placeholder="Capacidad" required>
-            </div>
-            </div>
-
-            <div class="row mb-3">
-            <div class="col-md-6">
-                <select class="form-select" required>
-                <option value="">Tipo de Sala</option>
-                <option value="2D">2D</option>
-                <option value="3D">3D</option>
-                <option value="VIP">VIP</option>
-                <option value="IMAX">IMAX</option>
-                </select>
-            </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Ubicación / Piso">
-            </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nombre de la sala" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" class="form-control" placeholder="Capacidad" required>
+                </div>
             </div>
 
             <div class="row mb-3">
-            <div class="col-md-6">
-                <select class="form-select" required>
-                <option value="">Estado</option>
-                <option value="activa">Activa</option>
-                <option value="inactiva">Inactiva</option>
-                </select>
-            </div>
-            <div class="col-md-6">
-                <select class="form-select" required>
-                <option>-- Sin película asignada --</option>
-                </select>
-            </div>
+                <div class="col-md-6">
+                    <select class="form-select" required>
+                    <option value="">Tipo de Sala</option>
+                    <option value="2D">2D</option>
+                    <option value="3D">3D</option>
+                    <option value="VIP">VIP</option>
+                    <option value="IMAX">IMAX</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Ubicación / Piso">
+                </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <select class="form-select" required>
+                        <option value="">Estado</option>
+                        <option value="activa">Activa</option>
+                        <option value="inactiva">Inactiva</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-select" required>
+                        <option>-- Sin película asignada --</option>
+                        </select>
+                    </div>
             </div>
 
             <div class="mb-3">
             <label class="form-label fw-bold">Horarios disponibles</label>
-            <div class="d-flex align-items-center gap-3">
-                <input type="time" class="form-control w-auto">
-                <button type="button" class="btn btn-primary">Agregar Horario</button>
-            </div>
+                <div class="d-flex align-items-center gap-3">
+                    <input type="time" class="form-control w-auto">
+                    <button type="button" class="btn btn-primary">Agregar Horario</button>
+                </div>
             </div>
 
             <button type="submit" class="btn btn-success">Guardar Sala</button>

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="interfazAdmin">
-        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3" style="height: 100vh; width: 220px;">
+        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3">
         <h2 class="text-center mb-4">Cine del Norte</h2>
         <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="admin.html" class="nav-link text-white"><i class="fa-solid fa-chart-line me-2"></i>Dashboard</a></li>
@@ -24,38 +24,42 @@
         </ul>
         </aside>
         <main class="contenido-principal">
-            <header class="encabezado-principal d-flex justify-content-between align-items-center bg-white p-4 rounded shadow-sm mb-4">
-                <h1 class="h3 text-dark m-0">Productos</h1>
-                <div class="acciones-usuario d-flex align-items-center gap-3">
-                    <i class="fas fa-bell text-secondary fs-5"></i>
-                    <i class="fas fa-cog text-secondary fs-5"></i>
+            <header class="encabezado-principal">
+                <h1>Productos</h1>
+                <div class="acciones-usuario">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-cog"></i>
                     <img src="/img/usuarioFondo.png" alt="avatar" class="avatar">
                 </div>
             </header>
         <form class="d-flex flex-column gap-3">
-            <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Nombre del producto" required />
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nombre del producto" required />
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Descripción" required />
+                </div>
             </div>
-            <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Descripción" required />
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="number" class="form-control" placeholder="Precio S/." required />
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select" required>
+                        <option value="">Categoría</option>
+                        <option value="Combos">Combos</option>
+                        <option value="Snacks">Snacks</option>
+                        <option value="Bebidas">Bebidas</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
             </div>
-            <div class="col-md-4">
-            <input type="number" class="form-control" placeholder="Precio S/." required />
-            </div>
-            <div class="col-md-4">
-            <select class="form-select" required>
-                <option value="">Categoría</option>
-                <option value="Combos">Combos</option>
-                <option value="Snacks">Snacks</option>
-                <option value="Bebidas">Bebidas</option>
-                <option value="Otros">Otros</option>
-            </select>
-            </div>
-            <div class="col-md-4">
-            <input type="file" class="form-control" accept="image/*" required />
+            <div class="col-md-5">
+                <input type="file" class="form-control" accept="image/*" required />
             </div>
             <div class="col-12">
-            <button type="submit" class="btn btn-dark">Agregar Producto</button>
+                <button type="submit" class="btn btn-dark">Agregar Producto</button>
             </div>
         </form>
         </main>

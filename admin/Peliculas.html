@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="interfazAdmin">
-        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3" style="height: 100vh; width: 220px;">
+        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3">
         <h2 class="text-center mb-4">Cine del Norte</h2>
         <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="admin.html" class="nav-link text-white"><i class="fa-solid fa-chart-line me-2"></i>Dashboard</a></li>
@@ -24,77 +24,78 @@
         </ul>
         </aside>
         <main class="contenido-principal">
-            <header class="encabezado-principal d-flex justify-content-between align-items-center bg-white p-4 rounded shadow-sm mb-4">
-                <h1 class="h3 text-dark m-0">Pelicula</h1>
-                <div class="acciones-usuario d-flex align-items-center gap-3">
-                    <i class="fas fa-bell text-secondary fs-5"></i>
-                    <i class="fas fa-cog text-secondary fs-5"></i>
+            <header class="encabezado-principal">
+                <h1>Pelicula</h1>
+                <div class="acciones-usuario">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-cog"></i>
                     <img src="/img/usuarioFondo.png" alt="avatar" class="avatar">
                 </div>
             </header>
         <form class="d-flex flex-column gap-3">
-            <div class="mb-3">
-            <label class="form-label"><strong>Título:</strong></label>
-            <input type="text" class="form-control" placeholder="Título" required>
+            <div class="row">
+                <div class="col-md-4">
+                    <label class="form-label"><strong>Título:</strong></label>
+                    <input type="text" class="form-control" placeholder="Título" required>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label"><strong>Género:</strong></label>
+                    <input type="text" class="form-control" placeholder="Género" required>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label"><strong>Duración:</strong></label>
+                    <input type="text" class="form-control" placeholder="Duración" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label class="form-label"><strong>Clasificación:</strong></label>
+                    <input type="text" class="form-control" placeholder="Clasificación" required>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label"><strong>Idioma:</strong></label>
+                    <select class="form-select" required>
+                        <option value="">Selecciona idioma</option>
+                        <option value="Doblada">Doblada</option>
+                        <option value="Subtitulada">Subtitulada</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label"><strong>URL del tráiler:</strong></label>
+                    <input type="url" class="form-control" placeholder="https://youtu.be/..." />
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <label class="form-label"><strong>Sinopsis:</strong></label>
+                <textarea class="form-control" placeholder="Sinopsis" rows="3" required></textarea>
             </div>
 
             <div class="mb-3">
-            <label class="form-label"><strong>Género:</strong></label>
-            <input type="text" class="form-control" placeholder="Género" required>
+                <label class="form-label"><strong>Disponibilidad:</strong></label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check2d">
+                    <label class="form-check-label" for="check2d">2D</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check3d">
+                    <label class="form-check-label" for="check3d">3D</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkvip">
+                    <label class="form-check-label" for="checkvip">VIP</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkimax">
+                    <label class="form-check-label" for="checkimax">IMAX</label>
+                </div>
             </div>
 
             <div class="mb-3">
-            <label class="form-label"><strong>Duración:</strong></label>
-            <input type="text" class="form-control" placeholder="Duración" required>
-            </div>
-
-            <div class="mb-3">
-            <label class="form-label"><strong>Clasificación:</strong></label>
-            <input type="text" class="form-control" placeholder="Clasificación" required>
-            </div>
-
-            <div class="mb-3">
-            <label class="form-label"><strong>Idioma:</strong></label>
-            <select class="form-select" required>
-                <option value="">Selecciona idioma</option>
-                <option value="Doblada">Doblada</option>
-                <option value="Subtitulada">Subtitulada</option>
-            </select>
-            </div>
-
-            <div class="mb-3">
-            <label class="form-label"><strong>Sinopsis:</strong></label>
-            <textarea class="form-control" placeholder="Sinopsis" rows="3" required></textarea>
-            </div>
-
-            <div class="mb-3">
-            <label class="form-label"><strong>URL del tráiler:</strong></label>
-            <input type="url" class="form-control" placeholder="https://youtu.be/..." />
-            </div>
-
-            <div class="mb-3">
-            <label class="form-label"><strong>Disponibilidad:</strong></label>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="check2d">
-                <label class="form-check-label" for="check2d">2D</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="check3d">
-                <label class="form-check-label" for="check3d">3D</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="checkvip">
-                <label class="form-check-label" for="checkvip">VIP</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="checkimax">
-                <label class="form-check-label" for="checkimax">IMAX</label>
-            </div>
-            </div>
-
-            <div class="mb-3">
-            <label class="form-label"><strong>Portada:</strong></label>
-            <input type="file" class="form-control" accept="image/*" required>
+                <label class="form-label"><strong>Portada:</strong></label>
+                <input type="file" class="form-control" accept="image/*" required>
             </div>
 
             <button type="submit" class="btn btn-dark">Agregar</button>

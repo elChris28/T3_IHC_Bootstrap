@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="interfazAdmin">
-        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3" style="height: 100vh; width: 220px;">
+        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3">
         <h2 class="text-center mb-4">Cine del Norte</h2>
         <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="admin.html" class="nav-link text-white"><i class="fa-solid fa-chart-line me-2"></i>Dashboard</a></li>
@@ -24,79 +24,72 @@
         </ul>
         </aside>
         <main class="contenido-principal">
-            <header class="encabezado-principal d-flex justify-content-between align-items-center bg-white p-4 rounded shadow-sm mb-4">
-                <h1 class="h3 text-dark m-0">Empleado</h1>
-                <div class="acciones-usuario d-flex align-items-center gap-3">
-                    <i class="fas fa-bell text-secondary fs-5"></i>
-                    <i class="fas fa-cog text-secondary fs-5"></i>
+            <header class="encabezado-principal">
+                <h1>Empleados</h1>
+                <div class="acciones-usuario">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-cog"></i>
                     <img src="/img/usuarioFondo.png" alt="avatar" class="avatar">
                 </div>
             </header>
-        <form class="d-flex flex-column gap-3">
-            <div class="mb-3">
-            <label class="form-label fw-bold">Nombre completo:</label>
-            <div class="row g-2">
-                <div class="col-md-6">
-                <input type="text" placeholder="Nombre" class="form-control" required />
+            <form class="d-flex flex-column gap-3">
+                <div class="row">
+                    <div class="col-md-6">
+                    <input type="text" placeholder="Nombre" class="form-control" required />
+                    </div>
+                    <div class="col-md-6">
+                    <input type="text" placeholder="Apellido" class="form-control" required />
+                    </div>
                 </div>
-                <div class="col-md-6">
-                <input type="text" placeholder="Apellido" class="form-control" required />
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="DNI" required />
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Cargo" required />
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Turno" required />
+                    </div>
                 </div>
-            </div>
-            </div>
 
-            <div class="mb-3">
-            <label class="form-label fw-bold">DNI:</label>
-            <input type="text" class="form-control" placeholder="DNI" required />
-            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Correo electrónico" required />
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" placeholder="Contraseña" required />
+                    </div>
+                </div>
 
-            <div class="mb-3">
-            <label class="form-label fw-bold">Correo Electrónico:</label>
-            <input type="email" class="form-control" placeholder="Correo electrónico" required />
-            </div>
+                <div class="d-flex align-items-center gap-3 my-3">
+                    <img src="/img/usuarioFondo.png" alt="" class="rounded-circle object-fit-cover border" style="width: 80px; height: 80px;" />
+                    <div>
+                        <label class="btn btn-dark">
+                        📁 Foto del personal
+                        <input type="file" accept="image/*" class="d-none" />
+                        </label>
+                    </div>
+                </div>
 
-            <div class="mb-3">
-            <label class="form-label fw-bold">Contraseña:</label>
-            <input type="password" class="form-control" placeholder="Contraseña" required />
-            </div>
+                <button type="submit" class="btn btn-dark">Agregar</button>
+            </form>
 
-            <div class="mb-3">
-            <label class="form-label fw-bold">Cargo:</label>
-            <input type="text" class="form-control" placeholder="Cargo" required />
-            </div>
-
-            <div class="mb-3">
-            <label class="form-label fw-bold">Turno:</label>
-            <input type="text" class="form-control" placeholder="Turno" required />
-            </div>
-
-            <div class="d-flex align-items-center gap-3 my-3">
-            <img src="/img/usuarioFondo.png" alt="" class="rounded-circle object-fit-cover border" style="width: 80px; height: 80px;" />
-            <div>
-                <label class="btn btn-dark">
-                📁 Foto del personal
-                <input type="file" accept="image/*" class="d-none" />
-                </label>
-            </div>
-            </div>
-
-            <button type="submit" class="btn btn-dark">Agregar</button>
-        </form>
-
-        <h2 class="mt-4">Personal Asignado:</h2>
-        <table class="table table-bordered">
-            <thead class="table-dark">
-            <tr>
-                <th>Nombre</th>
-                <th>DNI</th>
-                <th>Correo</th>
-                <th>Cargo</th>
-                <th>Turno</th>
-                <th>Foto</th>
-                <th>Acciones</th>
-            </tr>
-            </thead>
-        </table>
+            <h2 class="mt-4">Personal Asignado:</h2>
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>DNI</th>
+                    <th>Correo</th>
+                    <th>Cargo</th>
+                    <th>Turno</th>
+                    <th>Foto</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+            </table>
         </main>
     </div>
 </body>
