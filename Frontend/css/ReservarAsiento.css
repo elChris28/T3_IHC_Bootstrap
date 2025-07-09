@@ -33,7 +33,7 @@ main {
 }
 
 .info-butacas {
-  color: green;
+  color: rgb(0, 0, 0);
 }
 
 .tarjeta-descripcion {
@@ -55,9 +55,13 @@ main {
 }
 
 .btn-exito {
-  background-color: #198754;
+  background-color: #878719;
   color: white;
   width: 100%;
+}
+.btn-exito:hover {
+  background-color: #c1c10e;
+  color: white;
 }
 
 .btn-principal {
