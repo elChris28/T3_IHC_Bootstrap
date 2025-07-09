@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="interfazAdmin">
-        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3" style="height: 100vh; width: 220px;">
+        <aside class="barraLateral d-flex flex-column bg-dark text-white p-3">
         <h2 class="text-center mb-4">Cine del Norte</h2>
         <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="admin.html" class="nav-link text-white"><i class="fa-solid fa-chart-line me-2"></i>Dashboard</a></li>
@@ -25,147 +25,147 @@
         </ul>
         </aside>
         <main class="contenido-principal">
-            <header class="encabezado-principal d-flex justify-content-between align-items-center bg-white p-4 rounded shadow-sm mb-4">
-                <h1 class="h3 text-dark m-0">Administrador</h1>
-                <div class="acciones-usuario d-flex align-items-center gap-3">
-                    <i class="fas fa-bell text-secondary fs-5"></i>
-                    <i class="fas fa-cog text-secondary fs-5"></i>
-                    <img src="/img/usuarioFondo.png" alt="avatar" class="avatar">
-                </div>
-            </header>
+                <header class="encabezado-principal">
+                    <h1>Administrador</h1>
+                    <div class="acciones-usuario">
+                        <i class="fas fa-bell"></i>
+                        <i class="fas fa-cog"></i>
+                        <img src="/img/usuarioFondo.png" alt="avatar" class="avatar">
+                    </div>
+                </header>
 
-        <section class="seccion-principal container-fluid">
-            <div class="row g-4 mb-4">
-            <div class="col-md-3">
-                <div class="bg-white rounded shadow p-4 text-center text-dark d-flex flex-column">
-                <div class="fs-1 text-dark"><i class="fas fa-desktop"></i></div>
-                <span class="fw-bold fs-3 text-dark mb-1">6</span>
-                <span class="text-secondary">Salas de cine</span>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="bg-white rounded shadow p-4 text-center text-dark d-flex flex-column">
-                <div class="fs-1 text-dark"><i class="fas fa-desktop"></i></div>
-                <span class="fw-bold fs-3 text-dark mb-1">10</span>
-                <span class="text-secondary">Películas en Cartelera</span>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="bg-white rounded shadow p-4 text-center text-dark d-flex flex-column">
-                <div class="fs-1 text-dark"><i class="fas fa-desktop"></i></div>
-                <span class="fw-bold fs-3 text-dark mb-1">8</span>
-                <span class="text-secondary">Empleados</span>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="bg-white rounded shadow p-4 text-center text-dark d-flex flex-column">
-                <div class="fs-1 text-dark"><i class="fas fa-desktop"></i></div>
-                <span class="fw-bold fs-3 text-dark mb-1">24</span>
-                <span class="text-secondary">Entradas vendidas</span>
-                </div>
-            </div>
-            </div>
-
-            <div class="row g-4">
-            <div class="col-md-6">
-                <div class="tarjeta-grafico asistencia-mensual">
-                <h2>Asistencia Mensual</h2>
-                <div class="contenedor-grafico-lineas">
-                    <img src="/img/ASISTENCIAMENSUAL.png" alt="Asistencia Mensual" class="img-fluid ">
-                </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="tarjeta-grafico asistencia-semanal">
-                <h2>Asistencia Semanal</h2>
-                <div class="contenedor-grafico-lineas-semanal">
-                    <img src="/img/ASISTENCIASEMANAL.png" alt="Asistencia Semanal" class="img-fluid rounded shadow-sm mt-3">
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <div class="tarjeta-grafico peliculas-mas-vistas mt-4">
-            <h2>Películas más vistas</h2>
-            <div class="barras-peliculas">
-                <div class="nombre-Pelicula">
-                <span>Jhon Wick</span>
-                <div class="barra-progreso-pelicula">
-                    <div class="progreso" style="width: 85%;"></div>
-                </div>
-                </div>
-                <div class="nombre-Pelicula">
-                <span>Shrek</span>
-                <div class="barra-progreso-pelicula">
-                    <div class="progreso" style="width: 70%;"></div>
-                </div>
-                </div>
-                <div class="nombre-Pelicula">
-                <span>Terremoto</span>
-                <div class="barra-progreso-pelicula">
-                    <div class="progreso" style="width: 55%;"></div>
-                </div>
-                </div>
-                <div class="nombre-Pelicula">
-                <span>Sipnosis</span>
-                <div class="barra-progreso-pelicula">
-                    <div class="progreso" style="width: 40%;"></div>
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <section class="cuadricula-reportes">
-                <div class="tarjeta-reporte ventas-por-mes">
-                <h2>Ventas por mes</h2>
-                <div class="contenedor-grafico-con-ejes">
-                    <div class="etiquetas-eje-y-ventas">
-                    <span>$60 K</span>
-                    <span>$40 K</span>
-                    <span>$20 K</span>
-                    <span>$0 K</span>
+            <section class="seccion-principal container-fluid">
+                <div class="row g-4 mb-4">
+                    <div class="col-md-3">
+                        <div class="bg-white rounded shadow p-4 text-center text-dark d-flex flex-column">
+                            <div class="fs-1 text-dark"><i class="fas fa-desktop"></i></div>
+                            <span class="fw-bold fs-3 text-dark mb-1">6</span>
+                            <span class="text-secondary">Salas de cine</span>
+                        </div>
                     </div>
-                    <div class="cuadricula-grafico-barras">
-                    <div class="grupo-barra">
-                        <div class="barra" style="height: 50%;"></div>
-                        <span class="etiqueta">May</span>
+                    <div class="col-md-3">
+                        <div class="bg-white rounded shadow p-4 text-center text-dark d-flex flex-column">
+                        <div class="fs-1 text-dark"><i class="fas fa-desktop"></i></div>
+                        <span class="fw-bold fs-3 text-dark mb-1">10</span>
+                        <span class="text-secondary">Películas en Cartelera</span>
+                        </div>
                     </div>
-                    <div class="grupo-barra">
-                        <div class="barra" style="height: 70%;"></div>
-                        <span class="etiqueta">Jun</span>
+                    <div class="col-md-3">
+                        <div class="bg-white rounded shadow p-4 text-center text-dark d-flex flex-column">
+                        <div class="fs-1 text-dark"><i class="fas fa-desktop"></i></div>
+                        <span class="fw-bold fs-3 text-dark mb-1">8</span>
+                        <span class="text-secondary">Empleados</span>
+                        </div>
                     </div>
-                    <div class="grupo-barra">
-                        <div class="barra" style="height: 60%;"></div>
-                        <span class="etiqueta">Jul</span>
+                    <div class="col-md-3">
+                        <div class="bg-white rounded shadow p-4 text-center text-dark d-flex flex-column">
+                        <div class="fs-1 text-dark"><i class="fas fa-desktop"></i></div>
+                        <span class="fw-bold fs-3 text-dark mb-1">24</span>
+                        <span class="text-secondary">Entradas vendidas</span>
+                        </div>
                     </div>
-                    <div class="grupo-barra">
-                        <div class="barra" style="height: 80%;"></div>
-                        <span class="etiqueta">Dic</span>
-                    </div>
-                    <div class="grupo-barra">
-                        <div class="barra" style="height: 90%;"></div>
-                        <span class="etiqueta">Abr</span>
-                    </div>
-                    </div>
-                </div>
                 </div>
 
-                <div class="tarjeta-reporte">
-                <h2>Personal</h2>
-                <ul>
-                    <li><i class="fas fa-user-tie"></i> Ricardo Gómez - Gerente General</li>
-                    <li><i class="fas fa-user-cog"></i> Sofía Torres - Jefe de Operaciones</li>
-                    <li><i class="fas fa-cash-register"></i> Luis Mendoza - Cajero Principal</li>
-                    <li><i class="fas fa-ticket-alt"></i> Valeria Castro - Atención al Cliente</li>
-                    <li><i class="fas fa-broom"></i> Carlos Ruiz - Personal de Limpieza</li>
-                    <li><i class="fas fa-ice-cream"></i> Ana López - Encargada de Dulcería</li>
-                    <li><i class="fas fa-tools"></i> Javier Ramos - Mantenimiento</li>
-                    <li><i class="fas fa-video"></i> Elena Vargas - Proyeccionista</li>
-                </ul>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="tarjeta-grafico asistencia-mensual">
+                            <h2>Asistencia Mensual</h2>
+                            <div class="contenedor-grafico-lineas">
+                                <img src="/img/ASISTENCIAMENSUAL.png" alt="Asistencia Mensual" class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="tarjeta-grafico asistencia-semanal">
+                            <h2>Asistencia Semanal</h2>
+                            <div class="contenedor-grafico-lineas-semanal">
+                                <img src="/img/ASISTENCIASEMANAL.png" alt="Asistencia Semanal" class="img-fluid rounded shadow-sm mt-3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="tarjeta-grafico peliculas-mas-vistas mt-4">
+                    <h2>Películas más vistas</h2>
+                    <div class="barras-peliculas">
+                        <div class="nombre-Pelicula">
+                            <span>Jhon Wick</span>
+                            <div class="barra-progreso-pelicula">
+                                <div class="progreso" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="nombre-Pelicula">
+                            <span>Shrek</span>
+                            <div class="barra-progreso-pelicula">
+                                <div class="progreso" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="nombre-Pelicula">
+                            <span>Terremoto</span>
+                            <div class="barra-progreso-pelicula">
+                                <div class="progreso" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                        <div class="nombre-Pelicula">
+                            <span>Sipnosis</span>
+                            <div class="barra-progreso-pelicula">
+                                <div class="progreso" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="cuadricula-reportes">
+                    <div class="tarjeta-reporte ventas-por-mes">
+                        <h2>Ventas por mes</h2>
+                        <div class="contenedor-grafico-con-ejes">
+                            <div class="etiquetas-eje-y-ventas">
+                                <span>$60 K</span>
+                                <span>$40 K</span>
+                                <span>$20 K</span>
+                                <span>$0 K</span>
+                            </div>
+                            <div class="cuadricula-grafico-barras">
+                                <div class="grupo-barra">
+                                    <div class="barra" style="height: 50%;"></div>
+                                    <span class="etiqueta">May</span>
+                                </div>
+                                <div class="grupo-barra">
+                                    <div class="barra" style="height: 70%;"></div>
+                                    <span class="etiqueta">Jun</span>
+                                </div>
+                                <div class="grupo-barra">
+                                    <div class="barra" style="height: 60%;"></div>
+                                    <span class="etiqueta">Jul</span>
+                                </div>
+                                <div class="grupo-barra">
+                                    <div class="barra" style="height: 80%;"></div>
+                                    <span class="etiqueta">Dic</span>
+                                </div>
+                                <div class="grupo-barra">
+                                    <div class="barra" style="height: 90%;"></div>
+                                    <span class="etiqueta">Abr</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-reporte">
+                        <h2>Personal</h2>
+                        <ul>
+                            <li><i class="fas fa-user-tie"></i> Ricardo Gómez - Gerente General</li>
+                            <li><i class="fas fa-user-cog"></i> Sofía Torres - Jefe de Operaciones</li>
+                            <li><i class="fas fa-cash-register"></i> Luis Mendoza - Cajero Principal</li>
+                            <li><i class="fas fa-ticket-alt"></i> Valeria Castro - Atención al Cliente</li>
+                            <li><i class="fas fa-broom"></i> Carlos Ruiz - Personal de Limpieza</li>
+                            <li><i class="fas fa-ice-cream"></i> Ana López - Encargada de Dulcería</li>
+                            <li><i class="fas fa-tools"></i> Javier Ramos - Mantenimiento</li>
+                            <li><i class="fas fa-video"></i> Elena Vargas - Proyeccionista</li>
+                        </ul>
+                    </div>
+                </section>
             </section>
-        </section>
         </main>
     </div>
 </body>
