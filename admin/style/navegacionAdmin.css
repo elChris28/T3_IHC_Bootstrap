@@ -9,6 +9,16 @@ body {
   display: flex;
 }
 
+.barraLateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  overflow-y: auto;
+  background-color: #343a40; /* Por si acaso el fondo no se muestra */
+}
+
 .barraLateral ul li i {
   margin-right: 8px;
 }
@@ -30,8 +40,9 @@ body {
 }
 
 .contenido-principal {
-  flex-grow: 1;
-  padding: 2em;
+  margin-left: 220px; /* igual al ancho de la barra */
+  padding: 20px;
+  overflow-y: auto;
 }
 
 .boton {

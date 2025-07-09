@@ -25,29 +25,17 @@
   border: 1px solid #eee;
 }
 
-.asistencia-mensual .contenedor-grafico-lineas,
-.asistencia-semanal .contenedor-grafico-lineas-semanal {
-  height: 200px;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 50px;
-  position: relative;
-  border: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: 1em;
+.contenedor-grafico-lineas img,
+.contenedor-grafico-lineas-semanal img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-.contenedor-grafico-lineas svg polyline {
-  fill: none;
-  stroke: #2A6D9E; 
-  stroke-width: 2;
-}
-.contenedor-grafico-lineas-semanal svg polyline {
-  fill: none;
-  stroke: #FF7F0E; 
-  stroke-width: 2;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .etiquetas-eje-x,
