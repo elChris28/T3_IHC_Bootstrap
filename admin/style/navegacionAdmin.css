@@ -7,16 +7,15 @@ body {
 
 .interfazAdmin {
   display: flex;
+  height: 100vh;
 }
 
-.barraLateral {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 220px;
-  overflow-y: auto;
-  background-color: #343a40; /* Por si acaso el fondo no se muestra */
+aside.barraLateral {
+
+    width: 220px;
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
 }
 
 .barraLateral ul li i {
@@ -39,11 +38,11 @@ body {
   color: #ffffff;
 }
 
-.contenido-principal {
-  margin-left: 220px; /* igual al ancho de la barra */
-  padding: 20px;
-  overflow-y: auto;
-}
+  main.contenido-principal {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+  }
 
 .boton {
   padding: 10px 10px;
@@ -86,7 +85,7 @@ body {
 
 .acciones-usuario i {
     font-size: 1.4em;
-   color: #444; 
+    color: #444; 
     cursor: pointer;
     transition: color 0.4s;
 }
@@ -113,3 +112,5 @@ textarea
     background-color: #ffffff;
     color: #2D2D2D;
 }
+
+
